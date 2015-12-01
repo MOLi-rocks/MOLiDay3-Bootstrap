@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Demo-Form</title>
+</head>
+<body>
+	<form method="post" action="">
+		<table  align="center" width="450" cellpadding="5" style="background-color:#E8E8E8">
+			<tr>
+				<td align="right">Your name:</td>
+				<td><input type="text" id="Name" name="Name" size="30" value="Please write your Name here"/></td>
+			</tr>
+			<tr>
+				<td align="right">StudentID:</td>
+				<td><input type="text" id="StuID" name="StuID" size="30" value="Please write your StudentID here"/></td>
+			</tr>
+			<tr>
+				<td align="right">Gender:</td>
+				<td>
+					<input type="radio" id="sex" name="sex" value="M">Male 
+					<input type="radio" id="sex" name="sex" value="F">Female
+				</td>
+			</tr>
+			<tr>
+				<td align="right">Password:<br/>(Max：15)</td>
+				<td><input name="pwd" type="password" size="15" maxlength="15"/></td>
+			</tr>
+			<tr>
+				<td align="right" valign="top">Comments:</td>
+				<td><textarea id="cmts" name="cmts" cols="30" rows="4">Please write down your comments here.</textarea></td>
+			</tr>
+			<tr>
+				<td align="right">Members:</td>
+				<td>
+					<input type="checkbox" id="google" name="google" value="g" checked="checked" />Google
+					<input type="checkbox" id="yahoo" name="yahoo" value="y" />Yahoo!
+					<input type="checkbox" id="facebook" name="facebook" value="f" checked="checked" />Facebook
+				</td>
+			</tr>
+			<tr>
+				<td align="right" valign="top">BirthDate:</td>
+				<td><input type="date" id="Birthdate" name="Birthdate"/> </td>
+			</tr>
+			<tr>
+				<td align="right" valign="top">畢業年:</td>
+				<td>
+					<fieldset>
+						<legend>畢業 Data</legend>
+						Year:
+						<select id="year" name="year">
+							<option value="99">2010</option>
+							<option value="100">2011</option>
+							<option value="101">2012</option>
+							<option value="102">2013</option>
+							<option value="103">2014</option>
+						</select>
+						Month:
+						<select id="month" name="month">
+							<option value="1">01</option>
+							<option value="2">02</option>
+							<option value="3">03</option>
+							<option value="4">04</option>
+							<option value="5">05</option>
+							<option value="6">06</option>
+							<option value="7">07</option>
+							<option value="8">08</option>
+							<option value="9">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+					</fieldset>
+				</td>
+			</tr>
+			<tr>
+				<td align="right" valign="top">最常瀏覽網站:</td>
+				<td>
+					<select id="webs" name="webs[]" size="7" multiple="multiple">
+						<option>Google</option>
+						<option>Youtube</option>
+						<option>Facebook</opption>
+						<option>Yahoo!</option>
+						<option>Ncnu首頁</option>
+						<option>露天</option>
+						<option>巴哈姆特</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="right" valign="top">電腦資料:</td>
+				<td>
+				<select id="PCdata" name="PCdata[]" size="10" multiple="multiple">
+					<optgroup label="電腦OS">
+						<option>Windows 98</option>
+						<option>Windows XP</option>
+						<option>Windows 7</option>
+						<option>Windows 8</option>
+						<option>IOS</option>
+						<option>Linux</option>
+					</optgroup>
+					<optgroup label="瀏覽器">
+						<option>Internet Explorer 9</option>
+						<option>Google Chrome</option>
+						<option>FireFox</option>
+						<option>Safari</option>
+					</optgroup>
+					<optgroup label="即時通訊">
+						<option>Skype</option>
+						<option>Google Talk</option>
+						<option>Facebook</option>
+						<option>Line</option>
+					</optgroup>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">照片:</td>
+				<td><input type="file" name="ImgFile" enctype="multipart/form-data"> </td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center" valign="middle">
+					<table>
+						<tr>
+							<td><input type="submit" value="送出" /> </td>
+							<td><input type="reset" value="重填" /> </td>
+							<td><input type="button" value="JUST KIDDING!!" /></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
